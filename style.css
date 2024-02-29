@@ -106,7 +106,10 @@ table {
   tr td img {
     width: 40px;
   }
-
+td i {
+    margin-right: 6px;
+   
+}
 
   
 
