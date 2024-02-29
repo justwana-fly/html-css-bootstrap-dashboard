@@ -22,7 +22,7 @@
 </head>
 
 <body>
-
+    <!-- contenitore principale -->
     <div class="flex-wrap d-flex ">
         <div class="nav d-flex justify-content-between align-items-center  ">
 
@@ -47,24 +47,34 @@
 
         </div>
 
-        <!-- tabella ul li badge bootstrap offcanvas e il panello che esce -->
 
-        <div class="sidebar d-flex flex-column">
-            <div class="icon text-center mt-4">
-                <i class="fa-solid fa-house fa-lg"></i>
-                <span>Home</span>
+        <!-- la sidebar di sinistra -->
+        <div class="sidebar flex-md-column d-flex">
+            <div class="icon-top">
+                <div class="icon text-center mt-4">
+                    <i class="fa-solid fa-house fa-lg"></i>
+                    <span>Home</span>
+                </div>
+                <div class="icon text-center mt-4">
+                    <i class="fa-solid fa-chart-simple fa-lg"></i>
+                    <span>Stats</span>
+                </div>
+                <div class="icon text-center mt-4">
+                    <i class="fa-solid fa-signal fa-lg"></i>
+                    <span>Signals</span>
+                </div>
             </div>
-            <div class="icon text-center mt-4">
-                <i class="fa-solid fa-chart-simple fa-lg"></i>
-                <span>Stats</span>
-            </div>
-            <div class="icon text-center mt-4">
-                <i class="fa-solid fa-signal fa-lg"></i>
-                <span>Signals</span>
+            <div class="icon-end mt-auto">
+                <div class="icon text-center mt-4">
+                    <i class="fa-solid fa-gear fa-lg" style="color: #ffffff;"></i>
+                    <span>Admin</span>
+                </div>
             </div>
         </div>
 
 
+
+        <!-- main-top azzura -->
         <div class="m-top text-white">
             <div class="main-top d-flex justify-content-between align-items-center  p-4 ">
                 <div class="m-top-left">
@@ -85,53 +95,91 @@
                     <p class="fs-3">125</p>
                 </div>
 
-
+                <!-- finestra che esce una volta clicato il Nuovo Studente + -->
                 <div class="m-top-right">
                     <p class="d-inline">Nuovo Studente</p>
                     <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
 
                     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
-                        aria-labelledby="offcanvasRightLabel">
+                        aria-labelledby="offcanvasRightLabel" style="width: 1000px;">
                         <div class="offcanvas-header">
                             <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
                                 aria-label="Close"></button>
                         </div>
+                        <!-- contenuto dentro la finestra offcanvas -->
                         <div class="offcanvas-body">
-                            <!-- ... -->
+                            <h3>Inserisci un nuovo studente</h3>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1">Nome</span>
+                                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                              </div>
+                              
+                              <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                <span class="input-group-text" id="basic-addon2">@mail</span>
+                              </div>
+                              
+                              <div class="mb-3">
+                                <label for="basic-url" class="form-label">verifica la tua via</label>
+                                <div class="input-group">
+                                  <span class="input-group-text" id="basic-addon3">indirizzo</span>
+                                  <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+                                </div>
+                                <div class="form-text" id="basic-addon4">Example help text goes outside the input group.</div>
+                              </div>
+                              
+                              <div class="input-group mb-3">
+                                <span class="input-group-text">$</span>
+                                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                                <span class="input-group-text">.00</span>
+                              </div>
+                              
+                              <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+                                <span class="input-group-text">@</span>
+                                <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+                              </div>
+                              
+                              <div class="input-group">
+                                <span class="input-group-text">With textarea</span>
+                                <textarea class="form-control" aria-label="With textarea"></textarea>
+                              </div>
+                              <button type="button" class="mt-4  btn btn-primary">Salva</button>
+                              <button type="button" class="mt-4 btn btn-warning">Svuota</button>
                         </div>
                     </div>
 
                 </div>
             </div>
 
-
+            <!-- main -->
             <div class="main">
                 <div class="row g-0 ">
                     <div class="col-sm-6 col-md-8 ">
-                        
+
                         <div class="card m-2  ">
                             <div class="card-header">
                                 <h2 class="d-flex">Prossime classi</h2>
                             </div>
                             <table class="text-black">
                                 <tr>
-                                  <th>Nome</th>
-                                  <th>Data inizio</th>
-                                  <th>ROI</th>
-                                  <th>Stato</th>
-                                  <th>Azioni</th>
+                                    <th>Nome</th>
+                                    <th>Data inizio</th>
+                                    <th>ROI</th>
+                                    <th>Stato</th>
+                                    <th>Azioni</th>
                                 </tr>
                                 <tr>
-                                  <td><img src="img/class-avatar.jpg" alt=""> Classe 75</td>
-                                  <td>15 Feb 2021</td>
-                                  <td>20%</td>
-                                  <td><button type="button" class="btn btn-success  btn-sm">Done</button>
-                                  <td>
-                                    <i class="fa-solid fa-pencil" style="color: #9fa0a3;"></i>
-                                    <i class="fa-solid fa-trash" style="color: #a3a3a3;"></i>
-                                  </td>
+                                    <td><img src="img/class-avatar.jpg" alt=""> Classe 75</td>
+                                    <td>15 Feb 2021</td>
+                                    <td>20%</td>
+                                    <td><button type="button" class="btn btn-success  btn-sm">Done</button>
+                                    <td>
+                                        <i class="fa-solid fa-pencil" style="color: #9fa0a3;"></i>
+                                        <i class="fa-solid fa-trash" style="color: #a3a3a3;"></i>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td><img src="img/class-avatar.jpg" alt="">Classe 76</td>
@@ -139,19 +187,20 @@
                                     <td>20%</td>
                                     <td><button type="button" class="btn btn-success  btn-sm">Done</button></td>
                                     <td>
-                                    <i class="fa-solid fa-pencil" style="color: #9fa0a3;"></i>
-                                    <i class="fa-solid fa-trash" style="color: #a3a3a3;"></i>
-                                  </td>
+                                        <i class="fa-solid fa-pencil" style="color: #9fa0a3;"></i>
+                                        <i class="fa-solid fa-trash" style="color: #a3a3a3;"></i>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td><img src="img/class-avatar.jpg" alt="">Classe 77</td>
                                     <td>17 Feb 2021</td>
                                     <td>20%</td>
-                                    <td><button type="button" class="btn btn-warning btn-sm"><span class="text-white ">process</span></button></td>
+                                    <td><button type="button" class="btn btn-warning btn-sm"><span
+                                                class="text-white ">process</span></button></td>
                                     <td>
-                                    <i class="fa-solid fa-pencil" style="color: #9fa0a3;"></i>
-                                    <i class="fa-solid fa-trash" style="color: #a3a3a3;"></i>
-                                  </td>
+                                        <i class="fa-solid fa-pencil" style="color: #9fa0a3;"></i>
+                                        <i class="fa-solid fa-trash" style="color: #a3a3a3;"></i>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td><img src="img/class-avatar.jpg" alt="">Classe 78</td>
@@ -159,9 +208,9 @@
                                     <td>20%</td>
                                     <td><button type="button" class="btn btn-success  btn-sm">Done</button></td>
                                     <td>
-                                    <i class="fa-solid fa-pencil" style="color: #9fa0a3;"></i>
-                                    <i class="fa-solid fa-trash" style="color: #a3a3a3;"></i>
-                                  </td>
+                                        <i class="fa-solid fa-pencil" style="color: #9fa0a3;"></i>
+                                        <i class="fa-solid fa-trash" style="color: #a3a3a3;"></i>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td><img src="img/class-avatar.jpg" alt="">Classe 79</td>
@@ -169,9 +218,9 @@
                                     <td>20%</td>
                                     <td><button type="button" class="btn btn-danger btn-sm">Danger</button></td>
                                     <td>
-                                    <i class="fa-solid fa-pencil" style="color: #9fa0a3;"></i>
-                                    <i class="fa-solid fa-trash" style="color: #a3a3a3;"></i>
-                                  </td>
+                                        <i class="fa-solid fa-pencil" style="color: #9fa0a3;"></i>
+                                        <i class="fa-solid fa-trash" style="color: #a3a3a3;"></i>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td><img src="img/class-avatar.jpg" alt="">Classe 80</td>
@@ -179,9 +228,9 @@
                                     <td>20%</td>
                                     <td><button type="button" class="btn btn-success  btn-sm">Done</button></td>
                                     <td>
-                                    <i class="fa-solid fa-pencil" style="color: #9fa0a3;"></i>
-                                    <i class="fa-solid fa-trash" style="color: #a3a3a3;"></i>
-                                  </td>
+                                        <i class="fa-solid fa-pencil" style="color: #9fa0a3;"></i>
+                                        <i class="fa-solid fa-trash" style="color: #a3a3a3;"></i>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td><img src="img/class-avatar.jpg" alt="">Classe 81</td>
@@ -189,9 +238,9 @@
                                     <td>20%</td>
                                     <td><button type="button" class="btn btn-danger btn-sm">Danger</button></td>
                                     <td>
-                                    <i class="fa-solid fa-pencil" style="color: #9fa0a3;"></i>
-                                    <i class="fa-solid fa-trash" style="color: #a3a3a3;"></i>
-                                  </td>
+                                        <i class="fa-solid fa-pencil" style="color: #9fa0a3;"></i>
+                                        <i class="fa-solid fa-trash" style="color: #a3a3a3;"></i>
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td><img src="img/class-avatar.jpg" alt="">Classe 82</td>
@@ -199,21 +248,72 @@
                                     <td>20%</td>
                                     <td><button type="button" class="btn btn-success  btn-sm">Done</button></td>
                                     <td>
-                                    <i class="fa-solid fa-pencil" style="color: #9fa0a3;"></i>
-                                    <i class="fa-solid fa-trash" style="color: #a3a3a3;"></i>
-                                  </td>
+                                        <i class="fa-solid fa-pencil" style="color: #9fa0a3;"></i>
+                                        <i class="fa-solid fa-trash" style="color: #a3a3a3;"></i>
+                                    </td>
                                 </tr>
-                              </table>
+                            </table>
                         </div>
-                    
+                        <!-- f.a.q. -->
+                        <div class="card m-2 mt-4  ">
+                            <div class="card-header">
+                                <h2>F.A.Q.</h2>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="custom-item p-4" onclick="toggleAdditionalText(this)">
+                                    <span>Come aggiungere un nuovo studente?</span>
+                                    <div class="additional-text">Lorem ipsum dolor sit amet consectetur, adipisicing
+                                        elit. Deserunt, itaque.</div>
+                                    <a href="#" class="hook"><i class="fa-solid fa-chevron-down fa-lg"
+                                            style="color: #949494;"></i></a>
+                                </li>
+                                <li class="custom-item p-4" onclick="toggleAdditionalText(this)">
+                                    <span>Come posso accedere alle informazioni del mio account?</span>
+                                    <div class="additional-text">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                        elit. Ullam, ducimus.</div>
+                                    <a href="#" class="hook"><i class="fa-solid fa-chevron-down fa-lg"
+                                            style="color: #949494;"></i></a>
+                                </li>
+                                <li class="custom-item p-4" onclick="toggleAdditionalText(this)">
+                                    <span>Posso usare questa dashboard da mobile?</span>
+                                    <div class="additional-text">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                        elit. Voluptate, doloremque.</div>
+                                    <a href="#" class="hook"><i class="fa-solid fa-chevron-down fa-lg"
+                                            style="color: #949494;"></i></a>
+                                </li>
+                            </ul>
+
+                            <script>
+                                function toggleAdditionalText(element) {
+                                    const additionalText = element.querySelector('.additional-text');
+                                    const mainText = element.querySelector('span');
+                                    const hookIcon = element.querySelector('.hook i');
+                                    if (additionalText.style.display === 'none' || additionalText.style.display === '') {
+                                        additionalText.style.display = 'block';
+                                        mainText.style.display = 'none'; // Nasconde il testo principale
+                                        hookIcon.classList.remove('fa-chevron-down');
+                                        hookIcon.classList.add('fa-chevron-up');
+                                    } else {
+                                        additionalText.style.display = 'none';
+                                        mainText.style.display = 'block'; // Mostra nuovamente il testo principale
+                                        hookIcon.classList.remove('fa-chevron-up');
+                                        hookIcon.classList.add('fa-chevron-down');
+                                    }
+                                }
+                            </script>
+
+                        </div>
+
                     </div>
 
 
-                    
+
+
+                    <!-- parte destra del main Todo -->
                     <div class="col-6 col-md-4">
                         <div class="card m-2">
                             <div class="card-header">
-                               <h2> Todo</h2>
+                                <h2> Todo</h2>
                             </div>
                             <div class="card-body">
                                 <div class="card">
@@ -268,6 +368,8 @@
 
                         </div>
                     </div>
+
+
 
 
                 </div>

@@ -110,6 +110,21 @@ td i {
     margin-right: 6px;
    
 }
+.custom-item {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    cursor: pointer; 
+    padding: 10px; 
+}
 
-  
+.additional-text {
+    display: none; 
+}
 
+.hook {
+    order: 2; 
+}
+.icon-end {
+    margin-bottom: 100px;
+}
