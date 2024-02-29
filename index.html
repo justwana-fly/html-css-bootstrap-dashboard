@@ -1,71 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
+
 <body>
-  
+
     <div class="flex-wrap d-flex ">
         <div class="nav d-flex justify-content-between align-items-center  ">
-            <div class="left">
+
+            <div class="left text-center ">
                 <img src="img/logo.svg" alt="">
             </div>
+
             <div class="center ">
                 <form action="/action_page.php">
                     <label for="gsearch"><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></label>
-                    <input class="w-75 border-0" type="search" id="gsearch" name="gsearch" placeholder="Prova a cercare: Lezioni di Laravel">
-                    
-                  </form>
+                    <input class="border-0" type="search" id="gsearch" name="gsearch"
+                        placeholder="Prova a cercare: Lezioni di Laravel">
+                </form>
             </div>
 
-            <div class="right mr-3">
-                <i class="fa-solid fa-bars" ></i>
-                <i class="fa-solid fa-circle-question" ></i>
-                <i class="fa-solid fa-ellipsis-vertical" ></i>
+            <div class="right text-center  mr-3">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-circle-question"></i>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
                 <i class="fa-solid fa-bell" style="color: #FF8F00"></i>
             </div>
 
-        </div> <!--3 in % sezzioni poi justificontent -->
-                                    
-            <!-- tabella ul li badge bootstrap offcanvas e il panello che esce -->
-        
-            <div class="sidebar d-flex flex-column">
-                <div class="icon text-center mt-4">
-                    <i class="fa-solid fa-house fa-lg"></i>
-                    <span>Home</span>
+        </div>
+
+        <!-- tabella ul li badge bootstrap offcanvas e il panello che esce -->
+
+        <div class="sidebar d-flex flex-column">
+            <div class="icon text-center mt-4">
+                <i class="fa-solid fa-house fa-lg"></i>
+                <span>Home</span>
+            </div>
+            <div class="icon text-center mt-4">
+                <i class="fa-solid fa-chart-simple fa-lg"></i>
+                <span>Stats</span>
+            </div>
+            <div class="icon text-center mt-4">
+                <i class="fa-solid fa-signal fa-lg"></i>
+                <span>Signals</span>
+            </div>
+        </div>
+
+
+        <div class="m-top text-white">
+            <div class="main-top d-flex justify-content-between align-items-center  p-4 ">
+                <div class="m-top-left">
+                    <div>
+                        <h2 class="d-inline">Boolean</h2>
+                        <span class="badge rounded-pill text-bg-primary">Piano blaze</span>
+                    </div>
+                    <span class="badge rounded-pill text-bg-primary">3 app</span>
+                    <i class="fa-solid fa-angles-right fa-sm"></i>
+                    <span class="badge rounded-pill text-bg-primary">Bolean mobile app</span>
+                    <span class="badge rounded-pill text-bg-primary">Boolean web app</span>
+                    <span class="badge rounded-pill text-bg-primary">Boolean blog app</span>
                 </div>
-                <div class="icon text-center mt-4">
-                    <i class="fa-solid fa-chart-simple fa-lg"></i>
-                    <span>Stats</span>
+
+
+                <div class="m-top-center">
+                    <p>Studenti online negli ultimi 30 minuti</p>
+                    <p class="fs-3">125</p>
                 </div>
-                <div class="icon text-center mt-4">
-                    <i class="fa-solid fa-signal fa-lg"></i>
-                    <span>Signals</span>
+
+
+                <div class="m-top-right">
+                    <p class="d-inline">Nuovo Studente</p>
+                    <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                        aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                            <!-- qua scrivere -->
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            ...
+                        </div>
+                    </div>
+
                 </div>
             </div>
-        <div class="m-top">main-top
-        <div class="main">main</div>
-    </div>
-            
-          
-                   
-             
-        
-           
-        
-    
-    </div>
-    
-  
-    
+
+
+            <div class="main">main</div>
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
 </body>
+
 </html>
