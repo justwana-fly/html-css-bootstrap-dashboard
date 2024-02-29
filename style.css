@@ -89,4 +89,24 @@
     height: 100vh;
 }
 
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+   
+  }
+  td, th {
+    padding: 10px;
+    
+  }
+  tr td, tr th {
+    border-bottom: 1px solid lightgray ;
+    
+  }
+  tr td img {
+    width: 40px;
+  }
+
+
+  
 
